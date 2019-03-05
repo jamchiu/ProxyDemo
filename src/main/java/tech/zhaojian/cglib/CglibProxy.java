@@ -17,7 +17,7 @@ class Subject {
     }
 }
 
-//Cglib动态代理类
+//Cglib动态代理类，必须实现MethondInterceptor接口
 class SubjectMethodInterceptor implements MethodInterceptor{
     @Override
     public Object intercept(Object object, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
